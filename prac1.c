@@ -1,8 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int a[]={1,2,3,4,5,6,7,8,9,10};
-    int* ptr=a;
-    printf("address  %u and value %u",ptr+3,*ptr+3);
+    int n; 
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){ int count=1;
+        for(int j=1;j<=n;j++){
+            
+            printf("%d",count);
+            count++;
+        }
+        printf("\n");
+    }
     return 0;
 }
