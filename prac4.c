@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int arr[2][3][4];
-    for(int i=0; i<2; i++){
-        for(int j=0; j<3; j++){
-            for(int k=0; k<4; k++){
-                printf("%u ", &arr[i][j][k]);
-            }
+    int i, j, n;
+    scanf("%d", &n);
+    int num=0;
+    for(i=0; i<n;i++){
+        for(j=0;j<n;j++){
+            num++;
+            printf("%d ", num);
         }
+        
+        printf("\n");
     }
     return 0;
-
-        
-    
 }
