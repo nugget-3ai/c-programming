@@ -1,17 +1,18 @@
-
 #include <stdio.h>
 
 int main(){
-    int i,j,n;
-    
+    int n;
+    float sum=0,avg;
     scanf("%d",&n);
-    for(i=0;i<n;i++){
-        for(j=i+1;j>0;j--){
-           
-            printf("%d ",j);
-        }
-        printf("\n");
+    float arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%f",&arr[i]);
     }
+    for(int i=0;i<n;i++){
+        sum=sum+arr[i];
+        avg=sum/n;
 
+    }
+    printf("%0.2f",avg);
     return 0;
 }
